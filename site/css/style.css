@@ -386,6 +386,7 @@ footer {
 
 .product-item:last-child { border-bottom: none; }
 
+.product-item .p-image img{width:100%;height:100%;object-fit:cover;display:block;border-radius:8px;}
 .product-item .p-image {
   width: 72px;
   height: 72px;
