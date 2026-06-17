@@ -1,0 +1,335 @@
+[
+  {
+    "id": "minimalist-designer-desk",
+    "title": "Minimalist Designer Desk",
+    "tags": [
+      "Minimalist",
+      "Designer",
+      "Mid-Range"
+    ],
+    "budget": 410,
+    "desc": [
+      "A desk that disappears when you work 鈥?that鈥檚 the idea behind this scheme. Every piece is chosen to earn its place: functional, beautiful, and quiet.",
+      "The palette is warm neutrals and off-whites, with a single point of light from a curved arc lamp. The desk shelf adds depth and gives your monitor the perfect eye-line without a bulky stand."
+    ],
+    "img": "images/minimalist-designer.png",
+    "products": [
+      {
+        "name": "VIVO Electric Bamboo Standing Desk",
+        "note": "The foundation 鈥?warm bamboo top, electric height adjustment, minimalist frame.",
+        "price": "$299",
+        "color": "#e0ddd8",
+        "link": "https://amazon.com/dp/B0CCSZH4JS?tag=deskbyai-20"
+      },
+      {
+        "name": "Logitech MK250 Bluetooth Keyboard",
+        "note": "Compact, backlit, perfect key feel. The quietest keyboard that still feels premium.",
+        "price": "$24",
+        "color": "#1a1a1a",
+        "link": "https://amazon.com/dp/B0F36RKWDH?tag=deskbyai-20"
+      },
+      {
+        "name": "Logitech MX Master 3S Bluetooth Mouse",
+        "note": "Ergonomic, silent clicks, MagSpeed scroll wheel. Industry standard for a reason.",
+        "price": "$79",
+        "color": "#2d2d2d",
+        "link": "https://amazon.com/dp/B0FB21526X?tag=deskbyai-20"
+      },
+      {
+        "name": "Triple Tech Wireless Charging Desk Pad",
+        "note": "A soft landing for wrists and laptops. Merino wool felt in natural grey.",
+        "price": "$25",
+        "color": "#c8b8a0",
+        "link": "https://amazon.com/dp/B0FYBRY3D1?tag=deskbyai-20"
+      },
+      {
+        "name": "ULTRARM Modular Wood Monitor Stand",
+        "note": "Raises your monitor to eye level, creates layered depth on your desk. Walnut finish.",
+        "price": "$36",
+        "color": "#d4c9b8",
+        "link": "https://amazon.com/dp/B0DD75LGFZ?tag=deskbyai-20"
+      },
+      {
+        "name": "Acogedor Monitor Lamp with Remote",
+        "note": "Clips onto your monitor, illuminates your desk without screen glare. No desk space needed.",
+        "price": "$26",
+        "color": "#e8e0d0",
+        "link": "https://amazon.com/dp/B0BZGSJJWC?tag=deskbyai-20"
+      },
+      {
+        "name": "Costa Farms Snake Plant Potted",
+        "note": "A single snake plant or zz plant 鈥?the only decor you need. Brings the desk to life.",
+        "price": "$25",
+        "color": "#5a6b3a",
+        "link": "https://amazon.com/dp/B07FMH9LHD?tag=deskbyai-20"
+      }
+    ]
+  },
+  {
+    "id": "cyberpunk-night-setup",
+    "title": "Cyberpunk Night Setup",
+    "tags": [
+      "Cyberpunk",
+      "Gamer",
+      "High-End"
+    ],
+    "budget": 310,
+    "desc": [
+      "Dark backgrounds, neon accents, and precise lighting. This scheme is built for people who spend their best hours working after midnight 鈥?developers, designers, and gamers who want their desk to feel like a cockpit.",
+      "The key is layered ambient lighting: bias lighting behind the monitor, an RGB strip under the desk, and a single neon desktop light. Every surface is dark or black to let the lights pop."
+    ],
+    "img": "images/cyberpunk-night.png",
+    "products": [
+      {
+        "name": "Govee Monitor Backlight Neon",
+        "note": "1440p, 165Hz, Nano IPS. The gold standard for work and play.",
+        "price": "$79",
+        "color": "#0f0f0f",
+        "link": "https://amazon.com/dp/B0CB2WC155?tag=deskbyai-20"
+      },
+      {
+        "name": "Corsair Membrane RGB Gaming Keyboard",
+        "note": "Hall-effect analog switches with per-key RGB. Unbeatable for both typing and gaming.",
+        "price": "$39",
+        "color": "#111",
+        "link": "https://amazon.com/dp/B0CP6BR96G?tag=deskbyai-20"
+      },
+      {
+        "name": "Paladone Headphone Stand",
+        "note": "Ultra-light, wireless, with precise optical sensor. No compromises.",
+        "price": "$15",
+        "color": "#1a1a1a",
+        "link": "https://amazon.com/dp/B0FCYX8D5S?tag=deskbyai-20"
+      },
+      {
+        "name": "Lytmi Immersion Monitor Backlight Strip",
+        "note": "Addressable RGB strip for under-desk ambient glow. Syncs with music.",
+        "price": "$49",
+        "color": "#222",
+        "link": "https://amazon.com/dp/B09MHHXXSC?tag=deskbyai-20"
+      },
+      {
+        "name": "Aputure Full Color LED Light",
+        "note": "Bias lighting that syncs with your screen colors. Instant immersion.",
+        "price": "$89",
+        "color": "#333",
+        "link": "https://amazon.com/dp/B09VC88BHL?tag=deskbyai-20"
+      },
+      {
+        "name": "SteelSeries QcK Prism Mouse Pad",
+        "note": "Ergonomic gaming chair with adjustable lumbar support. Worth every dollar for long sessions.",
+        "price": "$39",
+        "color": "#1a1a1a",
+        "link": "https://amazon.com/dp/B07JQ2TK86?tag=deskbyai-20"
+      }
+    ]
+  },
+  {
+    "id": "warm-cozy-workspace",
+    "title": "Warm Cozy Workspace",
+    "tags": [
+      "Warm",
+      "Cozy",
+      "Mid-Range"
+    ],
+    "budget": 43,
+    "desc": [
+      "A workspace that feels like a retreat. Warm wood tones, soft lighting, and tactile materials create a desk you actually want to sit at.",
+      "The foundation is a warm wood desktop. Layer in a desk lamp with a soft warm bulb, a wool felt pad, and natural elements like a plant or two. The goal is a space that feels alive, not sterile."
+    ],
+    "img": "images/warm-cozy.png",
+    "products": [
+      {
+        "name": "Keychron K8 Pro Mechanical Keyboard",
+        "note": "Hot-swappable mechanical keyboard with warm brown switches and a solid walnut palm rest.",
+        "price": "$129",
+        "color": "#e8d8c0",
+        "link": "https://amazon.com/dp/B08B5WHYTT?tag=deskbyai-20"
+      },
+      {
+        "name": "Large Felt Desk Pad (39x20 inch)",
+        "note": "Natural merino wool felt. Soft, warm, and protects the wood surface.",
+        "price": "$17",
+        "color": "#d4c8b0",
+        "link": "https://amazon.com/dp/B09Q58Z9T9?tag=deskbyai-20"
+      },
+      {
+        "name": "Acogedor Monitor Lamp with Remote",
+        "note": "Warm lighting mode with ambient backlight. No screen glare, no desk space wasted.",
+        "price": "$26",
+        "color": "#e8c89a",
+        "link": "https://amazon.com/dp/B0BZGSJJWC?tag=deskbyai-20"
+      },
+      {
+        "name": "Costa Farms Monstera Deliciosa Plant",
+        "note": "A real statement plant for the corner of your desk. Adds life, color, and texture.",
+        "price": "$30",
+        "color": "#5a6b3a",
+        "link": "https://amazon.com/dp/B0B6DC5VNN?tag=deskbyai-20"
+      }
+    ]
+  },
+  {
+    "id": "budget-desk-upgrade",
+    "title": "Budget Desk Upgrade",
+    "tags": [
+      "Budget",
+      "Starter",
+      "Low-Cost"
+    ],
+    "budget": 82,
+    "desc": [
+      "You don鈥檛 need to spend a fortune to have a desk that feels good to work at. This scheme proves it 鈥?everything under $300.",
+      "The philosophy: spend on the things you touch every day (keyboard, mouse), save on the things that sit still (desk, monitor arm). No RGB, no gimmicks 鈥?just solid ergonomics."
+    ],
+    "img": "images/budget-desk.png",
+    "products": [
+      {
+        "name": "Monarch Specialties Desk 48-Inch",
+        "note": "The classic budget desk. Simple, clean, 47\" wide.",
+        "price": "$135",
+        "color": "#e8e4de",
+        "link": "https://amazon.com/dp/B008VCZFK4?tag=deskbyai-20"
+      },
+      {
+        "name": "VIVO Single Monitor Arm",
+        "note": "Frees up desk space, improves ergonomics.",
+        "price": "$29",
+        "color": "#d0ccc5",
+        "link": "https://amazon.com/dp/B07K6TLPNP?tag=deskbyai-20"
+      },
+      {
+        "name": "Logitech Pebble Mouse 2",
+        "note": "Silent clicks, comfortable shape. No frills.",
+        "price": "$29",
+        "color": "#2d2d2d",
+        "link": "https://amazon.com/dp/B0CY2734J2?tag=deskbyai-20"
+      },
+      {
+        "name": "Felt Desk Mat (2-Pack)",
+        "note": "30\"x12\" felt desk pad. Protects the desk.",
+        "price": "$15",
+        "color": "#f0ece5",
+        "link": "https://amazon.com/dp/B0DLNQG2DX?tag=deskbyai-20"
+      },
+      {
+        "name": "Cable Management Wire Organizer",
+        "note": "Velcro straps, cable clips, under-desk tray.",
+        "price": "$9",
+        "color": "#8a7b6a",
+        "link": "https://amazon.com/dp/B0B687J37D?tag=deskbyai-20"
+      }
+    ]
+  },
+  {
+    "id": "wireless-clean-setup",
+    "title": "The Wireless Clean Setup",
+    "tags": [
+      "Minimalist",
+      "Cable-Free",
+      "Clean"
+    ],
+    "budget": 2847,
+    "desc": [
+      "Zero visible cables. Not 鈥渉idden鈥?鈥?actually zero. Every product is chosen to eliminate a cable.",
+      "The secret is a single USB-C cable from laptop to monitor (which acts as a hub). A cable management tray under the desk handles the power strip."
+    ],
+    "img": "images/wireless-clean.png",
+    "products": [
+      {
+        "name": "FLEXISPOT EC1 Standing Desk",
+        "note": "Standing desk with cable management tray included.",
+        "price": "$299",
+        "color": "#e8e4de",
+        "link": "https://amazon.com/dp/B0CJHZND4G?tag=deskbyai-20"
+      },
+      {
+        "name": "Apple MacBook Pro 16 M4 Pro",
+        "note": "USB-C hub monitor. One cable for everything.",
+        "price": "$2,499",
+        "color": "#f5f5f5",
+        "link": "https://amazon.com/dp/B0GR1DS3YP?tag=deskbyai-20"
+      },
+      {
+        "name": "Dell Plus USB-C 4K Monitor",
+        "note": "Recharges via Lightning, lasts a month.",
+        "price": "$699",
+        "color": "#f0f0f0",
+        "link": "https://amazon.com/dp/B0F1GFD44G?tag=deskbyai-20"
+      },
+      {
+        "name": "Apple Magic Trackpad White",
+        "note": "Steel tray for power strip and excess cable.",
+        "price": "$129",
+        "color": "#d0ccc5",
+        "link": "https://amazon.com/dp/B0DL6ZN6GK?tag=deskbyai-20"
+      },
+      {
+        "name": "VIVO White Monitor Arm",
+        "note": "Gas spring arm, hides cables inside the channel.",
+        "price": "$49",
+        "color": "#e0ddd8",
+        "link": "https://amazon.com/dp/B0D67X2J6Y?tag=deskbyai-20"
+      }
+    ]
+  },
+  {
+    "id": "scandinavian-study",
+    "title": "Scandinavian Study",
+    "tags": [
+      "Scandinavian",
+      "Nordic",
+      "Clean"
+    ],
+    "budget": 299,
+    "desc": [
+      "Bright, airy, and effortlessly calm 鈥?this Scandinavian-inspired workspace brings Nordic simplicity to your home office. Light oak, soft textiles, and natural light do the heavy lifting.",
+      "The philosophy is hygge meets productivity: a warm rug underfoot, a plant breathing life into the corner, and nothing on the desk that doesn鈥檛 earn its place. Every piece is chosen for both function and the quiet joy it brings."
+    ],
+    "img": "images/scandi-study.png",
+    "products": [
+      {
+        "name": "mengli Monitor Mount Mechanical",
+        "note": "Gas spring arm, hides cables. Frees up desk space, improves posture.",
+        "price": "$29",
+        "color": "#e8e8e8",
+        "link": "https://amazon.com/dp/B0DK4KP2XP?tag=deskbyai-20"
+      },
+      {
+        "name": "Logitech Wireless Keyboard Mouse Combo",
+        "note": "Compact, quiet, multi-device. Matches Nordic aesthetic perfectly.",
+        "price": "$35",
+        "color": "#f5f5f5",
+        "link": "https://amazon.com/dp/B0BT4J2KMR?tag=deskbyai-20"
+      },
+      {
+        "name": "Celia Portable Mushroom Table Lamp",
+        "note": "Simple arc lamp with warm LED bulb. Soft, glare-free task lighting.",
+        "price": "$55",
+        "color": "#e8e0d0",
+        "link": "https://www.nordstrom.com/s/celia-10-portable-touch-controlled-outdoor-patio-mushroom-table-lamp/8708640"
+      },
+      {
+        "name": "Faux Turtle Back Leaf Potted Plant (Shein)",
+        "note": "Trailing green plant in ceramic cream pot. Low maintenance, high payoff.",
+        "price": "$15",
+        "color": "#6a7b4a",
+        "link": "https://us.shein.com/Artificial-Plants-Faux-Turtle-Back-Leaf-Potted-Plant-Small-Fake-Plant-In-White-Ceramic-Planter-Modern-Home-Office-Desk-Decor-For-Shelves-Tabletop-Living-Room-Decor-Indoor-Plants-For-Bathroom-Bedroom-Bookshelf-Botanical-Decor-Minimalist-Accent-Gift-p-441187692.html"
+      },
+      {
+        "name": "Matisse Green Leaf Wall Art Print (Etsy)",
+        "note": "Draped over a chair for texture. Adds warmth and a lived-in feel.",
+        "price": "$20",
+        "color": "#d4c8b0",
+        "link": "https://www.etsy.com/listing/1874851423/green-leaf-matisse-wall-art-henri"
+      },
+      {
+        "name": "Apple MacBook Pro 15-core 16-core",
+        "price": "$2,299",
+        "color": "#c0c0c0",
+        "note": "Apple MacBook Pro laptop",
+        "link": "https://amazon.com/dp/B0GR1JK9W?tag=deskbyai-20"
+      }
+    ]
+  }
+]

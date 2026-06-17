@@ -1,0 +1,44 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf6ee"/>
+      <stop offset="100%" stop-color="#f5ead5"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- Wood desk -->
+  <rect x="90" y="360" width="620" height="30" rx="4" fill="#c4956a"/>
+  <rect x="90" y="360" width="620" height="4" rx="2" fill="#d4a57a"/>
+  <!-- iMac-style monitor -->
+  <rect x="310" y="210" width="180" height="130" rx="10" fill="#f0ebe0" stroke="#e0d5c0" stroke-width="1"/>
+  <rect x="316" y="216" width="168" height="80" rx="3" fill="#faf6ee"/>
+  <rect x="316" y="300" width="168" height="35" rx="2" fill="#f5f0e5"/>
+  <!-- Stand -->
+  <rect x="385" y="338" width="30" height="22" rx="3" fill="#d0c5b0"/>
+  <!-- Wooden keyboard -->
+  <rect x="325" y="398" width="150" height="45" rx="6" fill="#c4956a"/>
+  <rect x="332" y="404" width="55" height="10" rx="4" fill="#d4a57a" opacity="0.6"/>
+  <rect x="392" y="404" width="55" height="10" rx="4" fill="#d4a57a" opacity="0.6"/>
+  <rect x="332" y="418" width="136" height="10" rx="4" fill="#d4a57a" opacity="0.4"/>
+  <rect x="332" y="432" width="136" height="8" rx="4" fill="#d4a57a" opacity="0.3"/>
+  <!-- Warm lamp -->
+  <rect x="195" y="290" width="8" height="70" rx="4" fill="#e8c89a"/>
+  <ellipse cx="199" cy="285" rx="35" ry="8" fill="#e8c89a" opacity="0.5"/>
+  <ellipse cx="199" cy="285" rx="25" ry="5" fill="#f5d4a0" opacity="0.4"/>
+  <!-- Warm glow -->
+  <circle cx="199" cy="285" r="80" fill="#f5d4a0" opacity="0.08"/>
+  <!-- Magazines -->
+  <rect x="580" y="365" width="35" height="25" rx="2" fill="#d4c5a0" transform="rotate(-5 597 377)"/>
+  <rect x="590" y="370" width="35" height="25" rx="2" fill="#e0d0b0" transform="rotate(3 607 382)"/>
+  <!-- Coffee mug -->
+  <rect x="530" y="372" width="22" height="20" rx="4" fill="#f0e8d8"/>
+  <ellipse cx="541" cy="372" rx="11" ry="4" fill="#e8d8c0"/>
+  <!-- Plant -->
+  <circle cx="650" cy="365" r="18" fill="#6a8b4a"/>
+  <line x1="650" y1="335" x2="650" y2="365" stroke="#5a7b3a" stroke-width="3"/>
+  <circle cx="640" cy="340" r="8" fill="#7a9b5a"/>
+  <circle cx="660" cy="338" r="7" fill="#7a9b5a"/>
+  <!-- Text -->
+  <rect x="280" y="470" width="240" height="2" fill="#c4956a" opacity="0.3" rx="1"/>
+  <text x="400" y="495" text-anchor="middle" fill="#b8956a" opacity="0.6" font-family="serif" font-size="13" font-style="italic">Warm Cozy Workspace</text>
+</svg>
