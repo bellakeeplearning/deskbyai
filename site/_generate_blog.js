@@ -44,7 +44,7 @@ articles.forEach(a=>{
 let blogIndex=fs.readFileSync(path.join(BLOG,'index.html'),'utf8');
 
 // Build new cards
-let cards=articles.map(a=>{
+let cards=articles.sort(function(a,b){return b.date.localeCompare(a.date)}).map(a=>{
   let imgFile=fs.existsSync(path.join(IMG,a.slug+'.webp'))?a.slug+'.webp':a.slug+'.svg';
   let excerpt=a.desc.length>120?a.desc.slice(0,120)+'...':a.desc;
   return '      <a href="'+a.slug+'.html" class="blog-card">\n        <div class="blog-card-image">\n          <img src="images/'+imgFile+'" alt="'+esc(a.title)+'" loading="lazy">\n        </div>\n        <div class="blog-card-body">\n          <span class="blog-card-date">'+a.date+'</span>\n          <h2>'+esc(a.title)+'</h2>\n          <p>'+esc(excerpt)+'</p>\n          <span class="blog-card-read">Read article →</span>\n        </div>\n      </a>';
