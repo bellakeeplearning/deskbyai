@@ -376,5 +376,27 @@
     <p>OutechLife &mdash; Curated workspace inspiration. As an Amazon Associate we earn from qualifying purchases.</p>
   </div>
 </footer>
+
+<script>
+(function(){
+  var today = new Date(); today.setHours(0,0,0,0);
+  var cards = document.querySelectorAll(".blog-card");
+  var hidden = 0;
+  for (var i = 0; i < cards.length; i++) {
+    var dateEl = cards[i].querySelector(".blog-card-date");
+    if (!dateEl) continue;
+    var parts = dateEl.textContent.trim().split("-");
+    var cardDate = new Date(parseInt(parts[0]), parseInt(parts[1])-1, parseInt(parts[2]));
+    if (cardDate > today) { cards[i].style.display = "none"; hidden++; }
+  }
+  if (hidden === cards.length && cards.length > 0) {
+    var msg = document.createElement("p");
+    msg.style.cssText = "grid-column:1/-1;text-align:center;color:var(--text-muted);padding:48px 0;font-size:0.9rem";
+    msg.textContent = "New article coming tomorrow! Check back daily for fresh desk setup tips.";
+    document.querySelector(".blog-grid").appendChild(msg);
+  }
+})();
+</script>
+
 </body>
 </html>
