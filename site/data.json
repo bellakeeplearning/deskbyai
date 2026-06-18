@@ -60,14 +60,15 @@
         "price": "$26",
         "color": "#e8e0d0",
         "link": "https://amazon.com/dp/B0BZGSJJWC?tag=deskbyai-20",
-        "image": "https://m.media-amazon.com/images/I/51I2XoropjL._AC_SY300_SX300_QL70_ML2_.jpg"
+        "image": "https://m.media-amazon.com/images/I/51I2XoropjL._AC_SL1500_.jpg"
       },
       {
         "name": "Costa Farms Snake Plant Potted",
         "note": "A single snake plant or zz plant —the only decor you need. Brings the desk to life.",
         "price": "$25",
         "color": "#5a6b3a",
-        "link": "https://amazon.com/dp/B07FMH9LHD?tag=deskbyai-20"
+        "link": "https://amazon.com/dp/B07FMH9LHD?tag=deskbyai-20",
+        "image": "https://m.media-amazon.com/images/I/61TlZhJFm9L._AC_SL1500_.jpg"
       }
     ]
   },
@@ -100,7 +101,7 @@
         "price": "$39",
         "color": "#111",
         "link": "https://amazon.com/dp/B0CP6BR96G?tag=deskbyai-20",
-        "image": "https://m.media-amazon.com/images/I/11RNLXhvOXL.jpg"
+        "image": "https://m.media-amazon.com/images/I/6107-fUPs9L._AC_SL1500_.jpg"
       },
       {
         "name": "Paladone Headphone Stand",
@@ -173,7 +174,7 @@
         "price": "$26",
         "color": "#e8c89a",
         "link": "https://amazon.com/dp/B0BZGSJJWC?tag=deskbyai-20",
-        "image": "https://m.media-amazon.com/images/I/11+Bx5fo15L.jpg"
+        "image": "https://m.media-amazon.com/images/I/51I2XoropjL._AC_SL1500_.jpg"
       },
       {
         "name": "Costa Farms Monstera Deliciosa Plant",
@@ -206,7 +207,7 @@
         "price": "$135",
         "color": "#e8e4de",
         "link": "https://amazon.com/dp/B008VCZFK4?tag=deskbyai-20",
-        "image": "https://m.media-amazon.com/images/I/11+Bx5fo15L.jpg"
+        "image": "https://m.media-amazon.com/images/I/5124ui0tnNL._AC_SL1500_.jpg"
       },
       {
         "name": "VIVO Single Monitor Arm",
@@ -238,7 +239,7 @@
         "price": "$9",
         "color": "#8a7b6a",
         "link": "https://amazon.com/dp/B0B687J37D?tag=deskbyai-20",
-        "image": "https://m.media-amazon.com/images/I/11RNLXhvOXL.jpg"
+        "image": "https://m.media-amazon.com/images/I/81F7bTfj+4L._AC_SX679_.jpg"
       }
     ]
   },
@@ -287,7 +288,7 @@
         "price": "$129",
         "color": "#d0ccc5",
         "link": "https://amazon.com/dp/B0DL6ZN6GK?tag=deskbyai-20",
-        "image": "https://m.media-amazon.com/images/I/41xG8Yh0rlL._SL75_.jpg"
+        "image": "https://m.media-amazon.com/images/I/31IUExGSAGL._AC_SL1144_.jpg"
       },
       {
         "name": "VIVO White Monitor Arm",
@@ -328,7 +329,7 @@
         "price": "$35",
         "color": "#f5f5f5",
         "link": "https://amazon.com/dp/B0BT4J2KMR?tag=deskbyai-20",
-        "image": "https://m.media-amazon.com/images/I/41xG8Yh0rlL._SL75_.jpg"
+        "image": "https://m.media-amazon.com/images/I/51vN5ma1cCL._AC_SL1500_.jpg"
       },
       {
         "name": "Celia Portable Mushroom Table Lamp",
@@ -343,7 +344,8 @@
         "note": "Trailing green plant in ceramic cream pot. Low maintenance, high payoff.",
         "price": "$15",
         "color": "#6a7b4a",
-        "link": "https://us.shein.com/Artificial-Plants-Faux-Turtle-Back-Leaf-Potted-Plant-Small-Fake-Plant-In-White-Ceramic-Planter-Modern-Home-Office-Desk-Decor-For-Shelves-Tabletop-Living-Room-Decor-Indoor-Plants-For-Bathroom-Bedroom-Bookshelf-Botanical-Decor-Minimalist-Accent-Gift-p-441187692.html"
+        "link": "https://us.shein.com/Artificial-Plants-Faux-Turtle-Back-Leaf-Potted-Plant-Small-Fake-Plant-In-White-Ceramic-Planter-Modern-Home-Office-Desk-Decor-For-Shelves-Tabletop-Living-Room-Decor-Indoor-Plants-For-Bathroom-Bedroom-Bookshelf-Botanical-Decor-Minimalist-Accent-Gift-p-441187692.html",
+        "image": "https://img.ltwebstatic.com/v4/j/pi/2026/04/09/1d/17757093612c446b7be001d9c905761c82549f65ab_thumbnail_405x552.jpg"
       },
       {
         "name": "Matisse Green Leaf Wall Art Print (Etsy)",
