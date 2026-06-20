@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ergonomic Desk Checklist — OutechLife</title>
+  <meta name="description" content="Check 15 essential ergonomic criteria for your workspace and get personalized recommendations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/tools.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <a href="../index.html" class="logo">OutechLife</a>
+    <nav>
+      <a href="../index.html">Schemes</a>
+      <a href="../blog/index.html" style="margin-left:16px">Blog</a>
+      <a href="index.html" style="margin-left:16px">Tools</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="container checklist-container">
+    <div class="tools-hero">
+      <h1>Ergonomic Desk Checklist</h1>
+      <p>Check off what you already have right, and we will tell you what to fix next.</p>
+    </div>
+    <div id="checklist"></div>
+    <div style="text-align:center;margin:20px 0">
+      <button class="quiz-btn" id="submitCheck" onclick="checkScore()">Check My Score</button>
+    </div>
+    <div class="checklist-score" id="checklistScore"></div>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <p>OutechLife &mdash; Curated workspace inspiration. As an Amazon Associate we earn from qualifying purchases.</p>
+  </div>
+</footer>
+<script>
+const items=[
+  {q:'Your monitor top is at or slightly below eye level',cat:'Monitor',a:'how-high-should-monitor-be',p:'Monitor Arm','prod':'Best monitor arm for neck relief'},
+  {q:'Your feet rest flat on the floor (or on a foot rest)',cat:'Posture',a:'desk-footrest-ergonomic-benefits',p:'Foot Rest','prod':'Check foot rest options'},
+  {q:'Your wrists stay straight while typing',cat:'Wrist',a:'how-to-fix-wrist-pain',p:'Wrist Rest','prod':'Ergonomic keyboard setup'},
+  {q:'Your chair has adjustable lumbar support',cat:'Chair',a:'best-ergonomic-chairs-under-500',p:'Ergonomic Chair','prod':'Best chairs under $500'},
+  {q:'Your keyboard sits at elbow height',cat:'Desk',a:'under-desk-storage-solutions',p:'Keyboard Tray','prod':'Under-desk keyboard tray'},
+  {q:'You take short breaks every 60 minutes',cat:'Habit',a:'morning-desk-routine-productivity',p:'Break Timer','prod':'Productivity timer apps'},
+  {q:'Your screen is free of glare from windows or lights',cat:'Lighting',a:'how-to-reduce-screen-glare',p:'Monitor Light Bar','prod':'Anti-glare solutions'},
+  {q:'You use a monitor arm or riser',cat:'Monitor',a:'best-monitor-arms-neck-pain',p:'Monitor Arm','prod':'Budget monitor arms'},
+  {q:'Your cables are managed off the desk surface',cat:'Organization',a:'cable-management-remote-workers',p:'Cable Tray','prod':'Cable management kit'},
+  {q:'You have a plant or natural element on your desk',cat:'Environment',a:'best-plants-for-desk-environment',p:'Desk Plant','prod':'Low maintenance plants'},
+  {q:'Your desk is perpendicular to windows',cat:'Lighting',a:'best-natural-light-desk-setup',p:'Desk Position','prod':'Window treatment guide'},
+  {q:'You use a palm rest when typing',cat:'Wrist',a:'cheap-ergonomic-upgrades-under-50',p:'Palm Rest','prod':'Best wrist rests'},
+  {q:'You can alternate between sitting and standing',cat:'Posture',a:'standing-desk-health-benefits',p:'Standing Desk','prod':'Budget standing desks'},
+  {q:'Your primary monitor is directly in front of you',cat:'Monitor',a:'dual-monitor-setup-guide',p:'Monitor Position','prod':'Dual monitor guide'},
+  {q:'Your mouse keeps your wrist straight (not twisted)',cat:'Wrist',a:'best-ergonomic-mouse-wrist-pain',p:'Vertical Mouse','prod':'Ergonomic mice tested'}
+];
+var scoreData={};
+function buildChecklist(){
+  var html='';var seen={};
+  items.forEach(function(it,i){
+    var cat=it.cat;
+    if(!seen[cat]){seen[cat]=true;html+='<h3 style="margin:24px 0 8px;font-size:0.9rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em">'+cat+'</h3>';}
+    html+='<div class="checklist-item"><input type="checkbox" id="c'+i+'" onchange="updateScore()"><label class="check-label" for="c'+i+'">'+it.q+'</label></div>';
+  });
+  document.getElementById('checklist').innerHTML=html;
+}
+function updateScore(){
+  var c=0;items.forEach(function(it,i){if(document.getElementById('c'+i).checked)c++;});
+  document.getElementById('submitCheck').textContent='Check My Score ('+c+'/'+items.length+')';
+}
+function checkScore(){
+  var failed=[];var passed=0;
+  items.forEach(function(it,i){
+    if(document.getElementById('c'+i).checked){passed++;}
+    else{failed.push(it);}
+  });
+  var pct=Math.round(passed/items.length*100);
+  var grade,cls,msg;
+  if(passed>=13){grade='Excellent!';cls='score-excellent';msg='Your workspace is well set up. These small tweaks can make it even better.';}
+  else if(passed>=9){grade='Good';cls='score-good';msg='A few improvements will make a big difference in your comfort.';}
+  else if(passed>=5){grade='Needs Work';cls='score-needs-work';msg='Start with the most critical items below to prevent long-term issues.';}
+  else{grade='Urgent';cls='score-needs-work';msg='Your desk may be causing strain. Prioritize fixing these items.';}
+  var html='<h2 style="margin-bottom:12px">Your Results</h2><div class="score-badge '+cls+'">'+passed+'/'+items.length+' &mdash; '+grade+'</div><p style="color:var(--text-muted);margin-bottom:24px">'+msg+'</p>';
+  if(failed.length>0){
+    html+='<h3 style="margin-bottom:12px">Recommendations</h3>';
+    failed.slice(0,5).forEach(function(it){
+      html+='<div class="reco-item"><h4>'+it.q+'</h4><p><a href="../blog/'+it.a+'.html">Read our guide</a> on '+it.p+'. <a href="../schemes/budget-desk-upgrade.html">Shop '+it.prod+' on Amazon.</a></p></div>';
+    });
+  }
+  html+='<div style="margin-top:24px"><button class="quiz-btn" onclick="resetCheck()">Retake</button> <a href="index.html" class="quiz-btn quiz-btn-outline">Back to Tools</a></div>';
+  var el=document.getElementById('checklistScore');
+  el.innerHTML=html;el.classList.add('show');
+  document.getElementById('submitCheck').disabled=true;window.scrollTo(0,0);
+}
+function resetCheck(){
+  items.forEach(function(it,i){document.getElementById('c'+i).checked=false;});
+  document.getElementById('checklistScore').classList.remove('show');
+  document.getElementById('submitCheck').disabled=false;
+  document.getElementById('submitCheck').textContent='Check My Score';
+  window.scrollTo(0,0);
+}
+buildChecklist();
+</script>
+</body>
+</html>

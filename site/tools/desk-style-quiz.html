@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desk Style Quiz — OutechLife</title>
+  <meta name="description" content="Answer 6 quick questions and find your perfect desk style. Get matched with a complete desk setup scheme.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/tools.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <a href="../index.html" class="logo">OutechLife</a>
+    <nav>
+      <a href="../index.html">Schemes</a>
+      <a href="../blog/index.html" style="margin-left:16px">Blog</a>
+      <a href="index.html" style="margin-left:16px">Tools</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="container quiz-container">
+    <div class="tools-hero">
+      <h1>What Is Your Desk Style?</h1>
+      <p>Answer 6 quick questions and we will match you with the perfect desk setup.</p>
+    </div>
+    <div id="quiz"></div>
+    <div style="text-align:center;margin-top:20px">
+      <button class="quiz-btn" id="submitQuiz" style="display:none" onclick="showResult()">See My Style</button>
+    </div>
+    <div class="quiz-result" id="quizResult"></div>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <p>OutechLife &mdash; Curated workspace inspiration. As an Amazon Associate we earn from qualifying purchases.</p>
+  </div>
+</footer>
+<script>
+const schemes = [
+  {id:'minimalist-designer-desk',name:'Minimalist Designer Desk',desc:'A desk that disappears when you work, with warm neutrals and off-whites. Clean, quiet, and intentionally minimal.',img:'../images/minimalist-designer.png',budget:'$410'},
+  {id:'cyberpunk-night-setup',name:'Cyberpunk Night Setup',desc:'Dark backgrounds, neon accents, and precise lighting. Built for late-night creators and gamers.',img:'../images/cyberpunk-night.png',budget:'$310'},
+  {id:'warm-cozy-workspace',name:'Warm Cozy Workspace',desc:'Warm wood tones, soft lighting, and tactile materials. A workspace that feels like a retreat.',img:'../images/warm-cozy.png',budget:'$43'},
+  {id:'budget-desk-upgrade',name:'Budget Desk Upgrade',desc:'Smart choices under $300. Solid ergonomics without the premium price tag.',img:'../images/budget-desk.png',budget:'$82'},
+  {id:'wireless-clean-setup',name:'Wireless Clean Setup',desc:'Zero visible cables. Every product chosen to minimize wires. A desk that looks like nothing is on it.',img:'../images/wireless-clean.png',budget:'$2847'},
+  {id:'scandinavian-study',name:'Scandinavian Study',desc:'Bright, airy, and calm. Nordic simplicity with light oak, soft textiles, and natural light.',img:'../images/scandi-study.png',budget:'$299'}
+];
+const questions = [
+  {q:'What atmosphere do you want your desk to feel like?',key:'atm',opts:[
+    {t:'Clean & Minimal',s:{'minimalist-designer-desk':3,'wireless-clean-setup':2}},
+    {t:'Warm & Cozy',s:{'warm-cozy-workspace':3,'scandinavian-study':1}},
+    {t:'Dark & Neon',s:{'cyberpunk-night-setup':3}},
+    {t:'Natural & Bright',s:{'scandinavian-study':3}}
+  ]},
+  {q:'What is your budget?',key:'budget',opts:[
+    {t:'Under $200',s:{'budget-desk-upgrade':3}},
+    {t:'$200 - $500',s:{'scandinavian-study':2,'warm-cozy-workspace':1}},
+    {t:'$500 - $1,000',s:{'minimalist-designer-desk':2,'cyberpunk-night-setup':2}},
+    {t:'$1,000+',s:{'wireless-clean-setup':3}}
+  ]},
+  {q:'What do you mainly do at your desk?',key:'activity',opts:[
+    {t:'Focused Work',s:{'minimalist-designer-desk':3,'scandinavian-study':2}},
+    {t:'Creative',s:{'warm-cozy-workspace':3}},
+    {t:'Gaming',s:{'cyberpunk-night-setup':3}},
+    {t:'Mixed',s:{'budget-desk-upgrade':2,'wireless-clean-setup':1}}
+  ]},
+  {q:'How do you feel about visible gear?',key:'gear',opts:[
+    {t:'Less is more',s:{'minimalist-designer-desk':3,'wireless-clean-setup':2}},
+    {t:'Function over form',s:{'budget-desk-upgrade':3}},
+    {t:'RGB everything',s:{'cyberpunk-night-setup':3}},
+    {t:'Mix old and new',s:{'warm-cozy-workspace':2,'scandinavian-study':1}}
+  ]},
+  {q:'What color palette do you prefer?',key:'color',opts:[
+    {t:'Monochrome',s:{'minimalist-designer-desk':3,'wireless-clean-setup':1}},
+    {t:'Warm tones',s:{'warm-cozy-workspace':3,'scandinavian-study':1}},
+    {t:'Dark with accents',s:{'cyberpunk-night-setup':3}},
+    {t:'Light natural',s:{'scandinavian-study':3,'warm-cozy-workspace':1}}
+  ]},
+  {q:'What desk size fits your space?',key:'size',opts:[
+    {t:'Compact',s:{'budget-desk-upgrade':3,'scandinavian-study':1}},
+    {t:'Standard',s:{'warm-cozy-workspace':2,'minimalist-designer-desk':2}},
+    {t:'Spacious',s:{'wireless-clean-setup':3,'cyberpunk-night-setup':1}},
+    {t:'L-shaped / Corner',s:{'cyberpunk-night-setup':2,'warm-cozy-workspace':1}}
+  ]}
+];
+var answers = {};
+function buildQuiz(){
+  var html='';var idx=0;
+  questions.forEach(function(q){
+    html+='<div class="quiz-question"><h3>'+(idx+1)+'. '+q.q+'</h3><div class="quiz-options" data-q="'+idx+'">';
+    q.opts.forEach(function(o,oi){
+      html+='<div class="quiz-option" onclick="selectAnswer('+idx+','+oi+')" id="q'+idx+'o'+oi+'">'+o.t+'</div>';
+    });
+    html+='</div></div>';idx++;
+  });
+  document.getElementById('quiz').innerHTML=html;
+}
+function selectAnswer(qi,oi){
+  var container=document.querySelectorAll('.quiz-question')[qi];
+  container.querySelectorAll('.quiz-option').forEach(function(el){el.classList.remove('selected');});
+  document.getElementById('q'+qi+'o'+oi).classList.add('selected');
+  answers[qi]=oi;
+  document.getElementById('submitQuiz').style.display='block';
+}
+function showResult(){
+  var scores={};schemes.forEach(function(s){scores[s.id]=0;});
+  for(var qi in answers){
+    var opt=questions[qi].opts[answers[qi]];
+    for(var sid in opt.s){scores[sid]+=opt.s[sid];}
+  }
+  var best=schemes.reduce(function(a,b){return (scores[a.id]||0)>=(scores[b.id]||0)?a:b;});
+  var s=best;
+  var html='<h2 style="margin-bottom:8px">Your Style: '+s.name+'</h2>'
+    +'<div class="scheme-match"><img src="'+s.img+'" alt="'+s.name+'">'
+    +'<div class="scheme-match-body"><p>'+s.desc+'</p><p style="font-weight:600;margin-bottom:16px">Estimated budget: '+s.budget+'</p>'
+    +'<a href="../schemes/'+s.id+'.html" class="quiz-btn">View Full Scheme</a>'
+    +'<button class="quiz-btn quiz-btn-outline" onclick="resetQuiz()">Retake Quiz</button></div></div>';
+  var el=document.getElementById('quizResult');
+  el.innerHTML=html;el.classList.add('show');
+  document.getElementById('submitQuiz').style.display='none';
+  document.querySelector('.quiz-container').scrollTop=0;window.scrollTo(0,0);
+}
+function resetQuiz(){answers={};document.getElementById('quizResult').classList.remove('show');buildQuiz();document.getElementById('submitQuiz').style.display='none';window.scrollTo(0,0);}
+buildQuiz();
+</script>
+</body>
+</html>
