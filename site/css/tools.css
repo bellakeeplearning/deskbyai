@@ -238,3 +238,5 @@
   .quiz-options { grid-template-columns: 1fr; }
   .quiz-question { padding: 16px; }
 }
+
+.tool-card-image img{width:100%;height:100%;object-fit:cover;display:block}
